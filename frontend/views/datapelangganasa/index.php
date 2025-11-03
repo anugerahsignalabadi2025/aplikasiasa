@@ -10,7 +10,7 @@ use yii\grid\GridView;
 /** @var frontend\models\datapelangganasaSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-$this->title = 'Datapelangganasas';
+// $this->title = 'Datapelangganasa';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="datapelangganasa-index">
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'no',
+            // 'no',
             'nama',
             'nohp',
             'alamat',

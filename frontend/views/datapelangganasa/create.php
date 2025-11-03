@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /** @var common\models\datapelangganasa $model */
 
 $this->title = 'Create Datapelangganasa';
-$this->params['breadcrumbs'][] = ['label' => 'Datapelangganasas', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Datapelangganasa', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="datapelangganasa-create">
