@@ -45,7 +45,7 @@
                     // ['label' => 'Yii2 PROVIDED', 'header' => true],
                     // ['label' => 'Login', 'url' => ['site/login'], 'icon' => 'sign-in-alt', 'visible' => Yii::$app->user->isGuest],
                     // ['label' => 'Gii',  'icon' => 'file-code', 'url' => ['/gii'], 'target' => '_blank'],
-                                        ['label' => 'Data Pelanggan', 'url' => ['/datapelangganasa'], 'icon' => 'sign-in-alt',],
+                                        ['label' => 'Data Pelanggan', 'url' => ['/data-pelangganasa'], 'icon' => 'sign-in-alt',],
                                         ['label' => 'Paket Internet', 'url' => ['/paketinternet'], 'icon' => 'sign-in-alt',],
                                         ['label' => 'Pelanggan', 'url' => ['/pelanggan'], 'icon' => 'sign-in-alt',],
                                         ['label' => 'Pengeluaran', 'url' => ['/pengeluaran'], 'icon' => 'sign-in-alt',],

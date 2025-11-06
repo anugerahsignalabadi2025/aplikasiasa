@@ -14,8 +14,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'nohp')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'alamat')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'tanggalpasang')->textInput(['maxlength' => true]) ?>

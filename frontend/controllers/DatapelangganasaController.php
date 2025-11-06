@@ -3,15 +3,15 @@
 namespace frontend\controllers;
 
 use common\models\datapelangganasa;
-use frontend\models\datapelangganasaSearch;
+use frontend\models\datapelangganasa as datapelangganasaSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * DatapelangganasaController implements the CRUD actions for datapelangganasa model.
+ * DataPelangganasaController implements the CRUD actions for datapelangganasa model.
  */
-class DatapelangganasaController extends Controller
+class DataPelangganasaController extends Controller
 {
     /**
      * @inheritDoc
@@ -71,11 +71,7 @@ class DatapelangganasaController extends Controller
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
-                // return $this->redirect(['view', 'no' => $model->no]);
-                                return $this->redirect(['index']);
-                // return $this->redirect(['index', 'no' => $model->no]);
-
-
+                return $this->redirect(['view', 'no' => $model->no]);
             }
         } else {
             $model->loadDefaultValues();

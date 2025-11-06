@@ -7,10 +7,10 @@ use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /** @var yii\web\View $this */
-/** @var frontend\models\datapelangganasaSearch $searchModel */
+/** @var frontend\models\datapelangganasa $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
-// $this->title = 'Datapelangganasa';
+$this->title = 'Datapelangganasas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="datapelangganasa-index">
@@ -31,10 +31,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
             // 'no',
             'nama',
-            'nohp',
             'alamat',
             'tanggalpasang',
-            //'paket',
+            'paket',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, datapelangganasa $model, $key, $index, $column) {

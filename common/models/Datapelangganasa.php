@@ -8,11 +8,10 @@ use Yii;
  * This is the model class for table "datapelangganasa".
  *
  * @property int $no
- * @property string|null $nama
- * @property string|null $nohp
- * @property string|null $alamat
- * @property string|null $tanggalpasang
- * @property string|null $paket
+ * @property string $nama
+ * @property string $alamat
+ * @property string $tanggalpasang
+ * @property string $paket
  */
 class Datapelangganasa extends \yii\db\ActiveRecord
 {
@@ -32,8 +31,8 @@ class Datapelangganasa extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama', 'nohp', 'alamat', 'tanggalpasang', 'paket'], 'default', 'value' => null],
-            [['nama', 'nohp', 'alamat', 'tanggalpasang', 'paket'], 'string', 'max' => 255],
+            [['nama', 'alamat', 'tanggalpasang', 'paket'], 'required'],
+            [['nama', 'alamat', 'tanggalpasang', 'paket'], 'string', 'max' => 255],
         ];
     }
 
@@ -45,7 +44,6 @@ class Datapelangganasa extends \yii\db\ActiveRecord
         return [
             'no' => 'No',
             'nama' => 'Nama',
-            'nohp' => 'Nohp',
             'alamat' => 'Alamat',
             'tanggalpasang' => 'Tanggalpasang',
             'paket' => 'Paket',

@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /** @var common\models\datapelangganasa $model */
 
 $this->title = $model->no;
-$this->params['breadcrumbs'][] = ['label' => 'Datapelangganasa', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Datapelangganasas', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
@@ -31,7 +31,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'no',
             'nama',
-            'nohp',
             'alamat',
             'tanggalpasang',
             'paket',
