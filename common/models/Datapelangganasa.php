@@ -31,7 +31,7 @@ class Datapelangganasa extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama', 'alamat', 'tanggalpasang', 'paket'], 'required'],
+            [['nama'], 'required'],
             [['nama', 'alamat', 'tanggalpasang', 'paket'], 'string', 'max' => 255],
         ];
     }
